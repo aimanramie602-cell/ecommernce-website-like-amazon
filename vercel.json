@@ -1,5 +1,15 @@
 {
   "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/(.*)\\.js", "dest": "/$1.js" },
+    { "src": "/(.*)\\.css", "dest": "/$1.css" },
+    { "src": "/(.*)\\.json", "dest": "/$1.json" },
+    { "src": "/(.*)\\.jpg", "dest": "/$1.jpg" },
+    { "src": "/(.*)\\.jpeg", "dest": "/$1.jpeg" },
+    { "src": "/(.*)\\.png", "dest": "/$1.png" },
+    { "src": "/(.*)\\.gif", "dest": "/$1.gif" },
+    { "src": "/(.*)\\.ico", "dest": "/$1.ico" },
+    { "src": "/(.*)\\.svg", "dest": "/$1.svg" },
+    { "src": "/(?!.*\\.)", "dest": "/index.html" }
   ]
 }
